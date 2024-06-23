@@ -21,7 +21,12 @@ public class FileHandler {
     private static final Logger LOGGER = LoggerFactory.getLogger(FileHandler.class);
 
     public static void main(String[] args) throws IOException {
-//    String path = "D:\\data";
+        String path = "/Users/cuongluongthien/file-handler";
+        shallowShowFilesByFile(path);
+        deepShowFilesByFilesWalk(path);
+        loadWithInputStreamReader(path + "/file-handler-file-1");
+        loadWithFileReader(path + "/file-handler-file-1");
+        //
         Double num = 123123123.12312;
         System.out.println(checkDouble(num, 19, 9));
     }
