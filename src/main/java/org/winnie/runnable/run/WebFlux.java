@@ -18,7 +18,7 @@ public class WebFlux {
                 })
                 .then(Mono.fromCallable(() -> 100))
                 .onErrorResume(throwable -> Mono.just(200))
-                .subscribe();
+                .subscribe(System.out::println);
     }
 
 }
