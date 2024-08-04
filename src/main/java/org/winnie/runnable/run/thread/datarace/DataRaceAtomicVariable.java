@@ -8,7 +8,6 @@ public class DataRaceAtomicVariable {
     private static AtomicInteger COUNTER = new AtomicInteger(0);
 
     /**
-     * It returns different result randomly
      *
      * @param args
      * @throws Exception
